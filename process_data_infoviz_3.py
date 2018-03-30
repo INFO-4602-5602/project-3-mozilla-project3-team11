@@ -30,6 +30,8 @@ for key, vals in data_viz1_excitment.items():
 
 
 file = open('viz1_excitment.csv', 'w')
+file.write('Skill Level, None of the above, How much fun it will be, How it will bring the world together, How easy it will make life, How it will make us all smarter and better educated, Other (please specify)\n')
+
 for key in viz1_excitment_counts:
     if key != '':   #get rid of no response to tech savvy
         updated_key= key.split(':')[0]  #grab only the words before the colon
@@ -45,6 +47,7 @@ for key in viz1_excitment_counts:
 file.close()
 
 file = open('viz1_fear.csv', 'w')
+file.write('Skill Level, Scared as hell, Cautiously optimistic, A little wary, On the fence, Super Excited \n')
 for key in viz1_fear_counts:
     if key != '':   #get rid of no response to tech savvy
         updated_key= key.split(':')[0]  #grab only the words before the colon
