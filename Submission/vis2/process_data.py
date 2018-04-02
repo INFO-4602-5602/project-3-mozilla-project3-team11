@@ -37,14 +37,20 @@ countries.sort()
 countries = countries.tolist()
 
 count1s = []
-count10s = []
-countpercountry = []
+countpercountry1 = []
 for i in range(0, len(countries)):
     for k in range(0,10):
-        countpercountry.append(int(0))
-    count1s.append(countpercountry)
-    count10s.append(countpercountry)
-    countpercountry = []         
+        countpercountry1.append(int(0))
+    count1s.append(countpercountry1)
+    countpercountry1 = []         
+
+count10s = []
+countpercountry10 = []
+for i in range(0, len(countries)):
+    for k in range(0,10):
+        countpercountry10.append(int(0))
+    count10s.append(countpercountry10)
+    countpercountry10 = []         
 
 for index,row in mozilla.iterrows():
     if row['Price'] == '1':
@@ -89,7 +95,7 @@ for index,row in mozilla.iterrows():
         count10s[countries.index(row['Country'])][8] += 1
     elif row['Convenience'] == '10':
         count10s[countries.index(row['Country'])][9] += 1
-
+        
 factors = ['Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience']
 
 highestprior = []
@@ -148,7 +154,3 @@ df_high.to_csv("data/highest_priority.csv",index=False,header=False)
 
 df_low = pd.DataFrame(total_lowest)
 df_low.to_csv("data/lowest_priority.csv",index=False,header=False)
-
-
-
-
