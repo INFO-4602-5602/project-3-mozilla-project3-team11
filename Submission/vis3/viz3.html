@@ -1,0 +1,169 @@
+<html>
+<title>Project 3: Viz 3</title>
+<meta charset='UTF-8'>
+<link rel='stylesheet' type='text/css' href='viz3.css'></link>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <!--Put your D3 import statement between these two lines-->
+    <script src='https://d3js.org/d3.v4.min.js'></script>
+    <!--Put your D3 import statement between these two lines-->
+</head>
+
+<body>
+    <div id='pieChart'>
+        <h1>Languages</h1>
+    </div>
+
+    <div id='barGraph'>
+        <h1 id='barTitle'></h1>
+        <svg width="809" height="500" id="barGraphSVG"></svg>
+    </div>
+
+    
+    <script type='text/javascript'>
+        
+        var width = 800,
+            height = 400,
+            radius = Math.min(width, height) / 2;
+
+        var svgPie = d3.select('#pieChart').append('svg')
+                       .attr('width', width)
+                       .attr('height', height)
+                       .append('g')
+                       .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')')
+
+        var color = d3.scaleOrdinal(['#27ae60', '#e74c3c', '#f1c40f', '#3498db', '#ee7600', '#8e44ad']);
+
+        var outerRadius = height / 2 - 20,
+            innerRadius = outerRadius / 3,
+            cornerRadius = 5;
+
+        var pie = d3.pie()
+                    .sort(null)
+                    .value(function(d) { return d['Total']; });
+
+        var path = d3.arc()
+                     .outerRadius(outerRadius)
+                     .innerRadius(innerRadius)
+                     .padAngle(0.02)
+                     .cornerRadius(cornerRadius);
+
+        d3.csv('visualization3.csv', function(error, data) {
+            if (error) throw error;
+
+            var arc = svgPie.selectAll('.arc')
+                            .data(pie(data))
+                            .enter()
+                            .append('g')
+                              .attr('class', 'arc');
+ 
+            arc.append('path')
+                .attr('d', path)
+                .attr('fill', function(d) { return color(d.data['Language']); })
+            
+            arc.on('mouseover', function(d) {
+                      //console.log(d3.select(this));
+                      /*
+                      d3.select(this)
+                        .enter()
+                        .attr('fill', function(d) { return 'black'; })
+                      */
+                    })
+               .on('mouseout', function(d) {
+                      //console.log(d3.select(this));
+                    })
+               .on('click', function(d, i ,j) {
+                      console.log(d3.select(this));
+                      console.log(d);
+                      console.log(j);
+                      updateBars(i);
+                    });
+        });
+    </script>
+    
+
+    <script type='text/javascript'>
+        function updateBars(languageID) {
+            $("#barGraphSVG").empty();
+
+            var margin = {top: 20, right: 20, bottom: 50, left: 80},
+                width = 960 - margin.left - margin.right,
+                height = 500 - margin.top - margin.bottom;
+
+            var svgBar = d3.select('#barGraphSVG')
+                          .attr('width', width + margin.left + margin.right)
+                           .attr('height', height + margin.top + margin.bottom)
+                           .append('g')
+                           .attr('transform', 'translate(' + margin.left + ',' + margin.right + ')')
+            
+            var x = d3.scaleBand().rangeRound([0, width]).padding(0.5),
+                y = d3.scaleLinear().rangeRound([height, 0]);
+
+            var colorBar = ['#27ae60', '#e74c3c', '#f1c40f', '#3498db', '#ee7600', '#8e44ad'];
+
+            svgBar.append('g')
+                    .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+
+            d3.csv('visualization3.csv', function(error, data) {
+                if (error) throw error;
+
+                document.getElementById('barTitle').innerHTML = 'Understood Concepts: ' + data[languageID]['Language'] + ' Speakers';
+
+                data = data[languageID];
+                delete data['Language'];
+                delete data['Total'];
+
+                var data2 = [];
+                for (i = 0; i < Object.keys(data).length; i++) {
+                    var explainedIdea = Object.keys(data)[i].split(': ').pop();
+                    
+                    data2[i] = {
+                        Explain: explainedIdea,
+                        Count: +data['Explain: ' + explainedIdea]
+                    }
+                }
+
+                x.domain(data2.map(function(d, i) { return d['Explain']; }));
+                y.domain([0, d3.max(data2, function(d) { return d['Count']; })]);
+                
+                svgBar.selectAll('rect')
+                      .data(data2)
+                      .enter()
+                      .append('rect')
+                        .attr('class', 'bar')
+                        .attr('fill', function(d) { return colorBar[languageID]; })
+                        .attr('x', function(d, i) { return x(d['Explain']); })
+                        .attr('y', function(d) { return y(d['Count']); })
+                        .attr('width', x.bandwidth())
+                        .attr('height', function(d) { return height - y(d['Count']); });
+
+                // Add the X Axis
+                svgBar.append('g')
+                      .attr('transform', 'translate(0, ' + height + ')')
+                      .call(d3.axisBottom(x));
+
+                // Add the Y Axis
+                svgBar.append('g')
+                      .call(d3.axisLeft(y));
+
+                // add the text labels
+                var xLabel = svgBar.append('text')
+                                     .attr('class', 'label')
+                                     .text('Concept')
+                                     .attr('x', width / 2)
+                                     .attr('y', height + 40);
+                var yLabel = svgBar.append('text')
+                                     .attr('class', 'label')
+                                     .text('Count')
+                                     .attr('x', -height / 2)
+                                     .attr('y', -60)
+                                     .attr('transform', 'rotate(-90)');
+         
+            });
+        }
+    </script>
+
+</body>
+
+
+</html>
+
