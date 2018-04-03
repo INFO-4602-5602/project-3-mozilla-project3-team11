@@ -48,7 +48,7 @@ for key in headers:
 file.close()
 
 file = open('viz1_fear.csv', 'w')
-file.write('Skill Level, Scared as hell, Cautiously optimistic, A little wary, On the fence, Super Excited \n')
+file.write('Skill Level, Scared as hell, Cautiously optimistic, A little wary, On the fence, Super excited \n')
 for key in headers:
     updated_key= key.split(':')[0]  #grab only the words before the colon
     line = viz1_fear_counts[key]
