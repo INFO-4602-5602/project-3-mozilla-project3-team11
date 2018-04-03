@@ -132,9 +132,28 @@ allhighestpriorityvalues = np.concatenate((tmp,highestprior.T),axis=1)
 tmp2 = np.concatenate((countries.T,count10s),axis=1)
 alllowestpriorityvalues = np.concatenate((tmp2,lowestprior.T),axis=1)
 
-column_names_high = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Highest Priority']
+countrynameid = pd.read_csv('data/world-country-names.tsv',sep='\t')
 
-column_names_low = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Lowest Priority']
+mapids = []
+for i in range(0,len(countries[0])):
+    mapids.append('1000')
+for i in range(0,len(countries[0])):
+    for index,row in countrynameid.iterrows():
+        if (str(countries[0][i]) in row['name']):
+            mapids[i] = int(row['id'])
+
+mapids1 = []
+mapids1.append(mapids)
+mapids = mapids1
+mapids = np.asarray(mapids)
+
+allhighestpriorityvalues = np.concatenate((allhighestpriorityvalues,mapids.T),axis=1)
+
+alllowestpriorityvalues = np.concatenate((alllowestpriorityvalues,mapids.T),axis=1)
+
+column_names_high = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Highest Priority','mapID']
+
+column_names_low = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Lowest Priority','mapID']
 
 column_names1_high = []
 column_names1_high.append(column_names_high)
@@ -152,5 +171,13 @@ total_lowest = np.concatenate((column_names_low,alllowestpriorityvalues),axis=0)
 df_high = pd.DataFrame(total_highest)
 df_high.to_csv("data/highest_priority.csv",index=False,header=False)
 
+df_high = pd.read_csv('data/highest_priority.csv')
+df_high = df_high[df_high['mapID'] != 1000]
+df_high.to_csv("data/highest_priority.csv",index=False)
+
 df_low = pd.DataFrame(total_lowest)
 df_low.to_csv("data/lowest_priority.csv",index=False,header=False)
+
+df_low = pd.read_csv('data/lowest_priority.csv')
+df_low = df_low[df_low['mapID'] != 1000]
+df_low.to_csv("data/lowest_priority.csv",index=False)

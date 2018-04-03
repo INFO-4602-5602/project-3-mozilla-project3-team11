@@ -1,208 +1,199 @@
-Country,Price,Features,Safety,Security,Privacy,Reliability,User Reviews,Expert Recommendation,Friend or Family Recommendation,Convenience,Lowest Priority
-Afghanistan,0,0,1,0,1,0,0,0,1,1,Safety
-Albania,0,2,0,0,1,1,11,4,15,5,Friend or Family Recommendation
-Algeria,42,11,21,10,24,16,86,29,116,20,Friend or Family Recommendation
-Andorra,0,0,0,1,0,0,0,0,3,0,Friend or Family Recommendation
-Angola,4,0,0,0,0,0,0,1,4,1,Price
-Anonymous Proxy,0,1,0,1,0,0,5,2,7,7,Friend or Family Recommendation
-Argentina,65,11,170,170,76,140,173,136,458,181,Friend or Family Recommendation
-Armenia,1,0,0,0,0,0,0,1,1,2,Convenience
-Aruba,1,0,0,0,0,0,0,0,0,0,Price
-Asia/Pacific Region,0,0,1,0,0,0,1,1,4,1,Friend or Family Recommendation
-Australia,107,41,118,23,67,10,273,228,644,370,Friend or Family Recommendation
-Austria,92,19,145,30,78,11,260,248,442,194,Friend or Family Recommendation
-Azerbaijan,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation
-Bahamas,0,0,0,0,0,0,0,0,2,1,Friend or Family Recommendation
-Bahrain,2,0,1,0,0,0,1,4,3,1,Expert Recommendation
-Bangladesh,10,5,4,7,8,2,30,14,43,57,Convenience
-Barbados,2,0,0,0,1,0,2,0,4,3,Friend or Family Recommendation
-Belarus,1,1,2,0,0,1,3,6,4,2,Expert Recommendation
-Belgium,107,48,111,53,109,23,389,343,565,86,Friend or Family Recommendation
-Belize,0,0,0,0,0,0,0,2,2,2,Expert Recommendation
-Benin,6,1,1,1,1,1,8,1,21,1,Friend or Family Recommendation
-Bhutan,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation
-Bolivia,8,2,9,17,10,8,21,11,49,22,Friend or Family Recommendation
-Bosnia and Herzegovina,3,1,1,0,3,0,2,2,12,8,Friend or Family Recommendation
-Botswana,1,0,0,1,1,0,1,0,2,0,Friend or Family Recommendation
-Brazil,347,56,289,137,352,105,1341,843,2617,2152,Friend or Family Recommendation
-Brunei Darussalam,2,0,0,0,1,0,1,0,6,2,Friend or Family Recommendation
-Bulgaria,4,0,7,3,7,4,15,10,24,21,Friend or Family Recommendation
-Burkina Faso,0,1,0,0,2,0,4,5,16,2,Friend or Family Recommendation
-Burundi,2,1,0,1,0,0,3,1,3,0,User Reviews
-Cambodia,1,0,1,0,0,1,6,4,9,3,Friend or Family Recommendation
-Cameroon,17,1,8,3,3,3,27,14,52,4,Friend or Family Recommendation
-Canada,209,82,206,52,118,24,548,460,989,448,Friend or Family Recommendation
-Cape Verde,0,0,0,0,1,0,0,1,1,0,Privacy
-Cayman Islands,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation
-Central African Republic,0,0,0,0,0,0,1,0,0,0,User Reviews
-Chad,0,0,0,0,0,0,2,0,1,1,User Reviews
-Chile,32,5,78,68,33,63,80,60,254,92,Friend or Family Recommendation
-China,3,0,3,1,0,1,5,10,26,8,Friend or Family Recommendation
-Christmas Island,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation
-Colombia,68,6,117,117,49,92,170,69,376,198,Friend or Family Recommendation
-Congo,1,0,1,0,0,0,0,1,3,0,Friend or Family Recommendation
-"Congo, The Democratic Republic of the",1,0,0,0,1,0,5,3,11,2,Friend or Family Recommendation
-Costa Rica,11,1,18,22,14,24,25,16,91,33,Friend or Family Recommendation
-Cote D'Ivoire,17,2,1,2,6,1,29,23,55,8,Friend or Family Recommendation
-Croatia,8,2,11,3,12,3,13,19,32,26,Friend or Family Recommendation
-Cuba,1,1,3,9,1,0,7,1,8,7,Security
-Curacao,0,1,0,0,1,0,2,0,1,0,User Reviews
-Cyprus,1,2,0,1,3,0,6,2,7,1,Friend or Family Recommendation
-Czech Republic,1,1,5,4,5,1,5,16,42,29,Friend or Family Recommendation
-Denmark,9,6,13,5,6,2,16,19,58,26,Friend or Family Recommendation
-Djibouti,0,0,0,0,0,1,0,2,1,0,Expert Recommendation
-Dominica,0,0,0,0,0,0,0,1,0,0,Expert Recommendation
-Dominican Republic,0,1,13,11,6,4,8,9,33,12,Friend or Family Recommendation
-Ecuador,26,11,35,62,16,49,70,34,147,106,Friend or Family Recommendation
-Egypt,2,1,3,2,2,1,17,10,24,11,Friend or Family Recommendation
-El Salvador,7,2,16,25,3,18,14,18,55,30,Friend or Family Recommendation
-Equatorial Guinea,0,0,0,0,0,0,0,1,0,0,Expert Recommendation
-Estonia,2,1,3,2,1,1,2,2,18,7,Friend or Family Recommendation
-Ethiopia,1,0,0,0,1,1,3,0,5,0,Friend or Family Recommendation
-Europe,3,2,12,5,6,1,22,17,39,8,Friend or Family Recommendation
-Fiji,1,0,0,0,1,0,3,2,4,0,Friend or Family Recommendation
-Finland,8,7,9,3,5,1,24,27,55,37,Friend or Family Recommendation
-France,1263,569,1696,765,1387,251,4667,5167,6224,672,Friend or Family Recommendation
-French Guiana,4,0,0,2,3,0,3,8,9,0,Friend or Family Recommendation
-French Polynesia,7,3,3,0,4,1,11,13,20,4,Friend or Family Recommendation
-Gabon,2,2,1,0,1,0,3,2,8,2,Friend or Family Recommendation
-Gambia,0,0,0,0,0,0,0,0,2,0,Friend or Family Recommendation
-Georgia,0,0,1,0,0,0,0,0,4,0,Friend or Family Recommendation
-Germany,974,208,1574,442,861,134,3051,2692,4682,2411,Friend or Family Recommendation
-Ghana,11,1,1,0,1,0,10,6,17,9,Friend or Family Recommendation
-Gibraltar,0,0,0,0,0,0,1,0,1,0,User Reviews
-Greece,10,5,8,14,7,8,24,30,109,35,Friend or Family Recommendation
-Guadeloupe,3,0,5,1,3,0,15,9,27,1,Friend or Family Recommendation
-Guam,0,0,1,0,0,0,1,0,1,0,Safety
-Guatemala,9,3,21,19,5,19,24,9,55,33,Friend or Family Recommendation
-Guernsey,1,0,1,0,2,0,0,1,3,1,Friend or Family Recommendation
-Guinea,1,0,0,0,1,0,3,2,5,0,Friend or Family Recommendation
-Guyana,0,0,1,1,0,0,1,0,4,2,Friend or Family Recommendation
-Haiti,3,0,0,0,0,0,3,1,3,1,Price
-Holy See (Vatican City State),0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation
-Honduras,2,2,9,11,1,3,13,5,23,15,Friend or Family Recommendation
-Hong Kong,1,2,3,1,4,2,6,4,15,11,Friend or Family Recommendation
-Hungary,3,3,3,0,4,0,11,8,29,20,Friend or Family Recommendation
-Iceland,3,1,2,0,3,0,7,1,4,1,User Reviews
-India,136,27,64,33,94,67,290,269,959,395,Friend or Family Recommendation
-Indonesia,25,10,13,7,16,17,73,52,168,73,Friend or Family Recommendation
-"Iran, Islamic Republic of",10,7,7,1,8,6,12,7,45,36,Friend or Family Recommendation
-Iraq,0,1,0,1,0,0,3,1,5,4,Friend or Family Recommendation
-Ireland,9,4,17,5,12,1,37,34,87,56,Friend or Family Recommendation
-Isle of Man,1,0,0,2,1,0,1,1,3,0,Friend or Family Recommendation
-Israel,4,3,10,3,6,3,17,9,35,19,Friend or Family Recommendation
-Italy,568,155,1015,1270,1695,187,3081,1974,9015,1068,Friend or Family Recommendation
-Jamaica,1,0,0,0,0,0,3,4,5,0,Friend or Family Recommendation
-Japan,12,2,7,4,7,3,22,16,37,6,Friend or Family Recommendation
-Jersey,0,0,0,0,0,0,1,0,7,3,Friend or Family Recommendation
-Jordan,3,0,1,1,0,0,0,1,7,6,Friend or Family Recommendation
-Kazakhstan,0,0,0,0,1,0,2,0,1,2,User Reviews
-Kenya,10,1,6,3,8,0,22,24,82,16,Friend or Family Recommendation
-"Korea, Republic of",1,0,0,0,1,0,7,4,15,1,Friend or Family Recommendation
-Kuwait,0,0,0,0,1,1,4,3,6,1,Friend or Family Recommendation
-Kyrgyzstan,0,1,0,0,0,0,0,0,0,0,Features
-Lao People's Democratic Republic,0,0,0,0,1,0,1,0,1,0,Privacy
-Latvia,0,1,2,1,1,0,4,6,8,6,Friend or Family Recommendation
-Lebanon,2,0,1,0,0,0,6,5,13,3,Friend or Family Recommendation
-Lesotho,1,0,0,0,0,0,1,0,0,1,Price
-Liberia,0,0,0,0,0,0,1,1,1,0,User Reviews
-Libya,1,0,0,0,0,0,0,0,0,0,Price
-Liechtenstein,0,0,4,0,0,0,0,0,2,1,Safety
-Lithuania,1,0,1,2,6,1,6,7,15,6,Friend or Family Recommendation
-Luxembourg,5,4,12,2,8,2,25,26,53,7,Friend or Family Recommendation
-Macau,0,0,0,1,0,0,0,1,0,0,Security
-Macedonia,1,1,1,0,1,0,0,2,3,2,Friend or Family Recommendation
-Madagascar,13,3,9,1,6,4,28,12,40,2,Friend or Family Recommendation
-Malawi,0,0,1,1,0,0,0,0,4,0,Friend or Family Recommendation
-Malaysia,10,6,5,3,13,3,32,23,88,30,Friend or Family Recommendation
-Maldives,0,0,0,0,0,0,3,0,1,1,User Reviews
-Mali,3,0,1,0,1,0,2,1,12,2,Friend or Family Recommendation
-Malta,2,1,1,0,1,1,3,1,8,6,Friend or Family Recommendation
-Marshall Islands,1,0,0,0,0,0,0,0,0,0,Price
-Martinique,4,1,1,2,1,1,18,13,21,2,Friend or Family Recommendation
-Mauritania,0,0,0,1,0,0,1,0,0,1,Security
-Mauritius,2,1,1,1,0,0,7,4,12,13,Convenience
-Mayotte,1,2,0,2,0,0,3,0,4,1,Friend or Family Recommendation
-Mexico,140,27,288,382,143,305,427,244,1254,617,Friend or Family Recommendation
-"Micronesia, Federated States of",0,0,0,0,0,0,0,0,0,1,Convenience
-"Moldova, Republic of",0,1,0,0,0,0,0,0,5,0,Friend or Family Recommendation
-Monaco,2,0,1,1,0,2,3,2,3,1,User Reviews
-Mongolia,0,0,0,1,0,1,0,1,2,1,Friend or Family Recommendation
-Montenegro,0,0,0,1,0,0,1,1,4,3,Friend or Family Recommendation
-Morocco,24,6,14,7,11,10,67,43,106,24,Friend or Family Recommendation
-Mozambique,0,0,1,0,0,1,4,1,3,1,User Reviews
-Myanmar,2,1,0,0,2,0,5,4,10,5,Friend or Family Recommendation
-Namibia,3,1,2,0,0,0,2,1,5,3,Friend or Family Recommendation
-Nepal,7,0,1,2,3,1,6,4,33,13,Friend or Family Recommendation
-Netherlands,25,17,37,15,21,8,68,67,196,76,Friend or Family Recommendation
-New Caledonia,8,1,4,2,3,0,24,22,37,3,Friend or Family Recommendation
-New Zealand,16,16,23,9,17,3,66,40,150,94,Friend or Family Recommendation
-Nicaragua,1,1,5,9,5,0,7,5,23,16,Friend or Family Recommendation
-Niger,1,0,0,0,0,0,2,1,3,0,Friend or Family Recommendation
-Nigeria,20,0,4,5,8,3,20,11,60,10,Friend or Family Recommendation
-Northern Mariana Islands,0,0,0,0,0,0,0,1,0,0,Expert Recommendation
-Norway,9,7,10,2,5,1,21,21,52,31,Friend or Family Recommendation
-Oman,0,0,1,0,0,1,0,1,3,3,Friend or Family Recommendation
-Pakistan,9,4,9,3,7,3,24,15,42,35,Friend or Family Recommendation
-Palestinian Territory,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation
-Panama,2,0,7,8,2,7,9,5,27,10,Friend or Family Recommendation
-Papua New Guinea,1,0,0,0,0,0,1,0,1,1,Price
-Paraguay,6,1,10,18,8,7,12,13,42,14,Friend or Family Recommendation
-Peru,33,5,23,29,11,39,58,20,116,80,Friend or Family Recommendation
-Philippines,15,5,2,2,13,4,56,25,123,38,Friend or Family Recommendation
-Poland,6,2,9,5,7,0,22,27,47,21,Friend or Family Recommendation
-Portugal,10,2,10,10,3,4,32,30,75,42,Friend or Family Recommendation
-Puerto Rico,3,1,2,2,2,0,4,5,26,6,Friend or Family Recommendation
-Qatar,0,2,0,0,0,0,2,4,8,5,Friend or Family Recommendation
-Reunion,22,6,10,13,10,2,65,49,75,7,Friend or Family Recommendation
-Romania,11,3,6,6,5,6,25,24,100,45,Friend or Family Recommendation
-Russian Federation,3,5,7,2,7,2,14,15,47,16,Friend or Family Recommendation
-Rwanda,0,0,0,0,1,0,0,1,3,4,Convenience
-Saint Kitts and Nevis,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation
-Saint Lucia,0,0,0,0,0,0,0,0,2,0,Friend or Family Recommendation
-Saint Martin,0,0,0,1,0,0,0,0,0,0,Security
-Saint Pierre and Miquelon,1,0,0,1,0,0,1,2,1,0,Expert Recommendation
-Saint Vincent and the Grenadines,0,0,0,0,0,0,0,1,0,0,Expert Recommendation
-San Marino,0,0,0,0,2,0,2,1,7,1,Friend or Family Recommendation
-Saudi Arabia,2,0,4,1,3,0,11,5,23,4,Friend or Family Recommendation
-Senegal,8,1,2,1,1,1,18,13,31,4,Friend or Family Recommendation
-Serbia,6,1,3,5,9,1,19,16,48,28,Friend or Family Recommendation
-Seychelles,0,0,0,0,0,0,0,1,0,0,Expert Recommendation
-Sierra Leone,0,0,0,0,1,0,1,0,0,1,Privacy
-Singapore,5,1,4,1,8,1,14,20,44,20,Friend or Family Recommendation
-Slovakia,2,1,1,0,1,0,5,8,12,13,Convenience
-Slovenia,3,2,1,0,4,1,7,6,27,9,Friend or Family Recommendation
-Solomon Islands,0,0,0,0,0,0,1,0,0,0,User Reviews
-Somalia,0,0,0,0,0,0,0,0,0,1,Convenience
-South Africa,14,2,26,6,10,4,50,33,132,40,Friend or Family Recommendation
-South Sudan,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation
-Spain,129,33,271,247,168,362,360,351,909,568,Friend or Family Recommendation
-Sri Lanka,2,0,1,1,1,1,9,3,17,24,Convenience
-Sudan,0,0,0,0,0,0,3,0,7,0,Friend or Family Recommendation
-Suriname,0,0,0,0,0,0,0,0,0,1,Convenience
-Swaziland,1,0,0,0,0,0,0,0,1,2,Convenience
-Sweden,12,8,18,3,10,4,24,32,94,36,Friend or Family Recommendation
-Switzerland,206,40,198,69,130,29,520,447,710,233,Friend or Family Recommendation
-Syrian Arab Republic,0,0,0,0,0,0,2,1,5,2,Friend or Family Recommendation
-Taiwan,2,0,3,2,0,0,7,4,16,5,Friend or Family Recommendation
-Tajikistan,0,0,0,0,0,0,0,0,0,1,Convenience
-"Tanzania, United Republic of",2,3,1,0,2,0,4,1,11,4,Friend or Family Recommendation
-Thailand,9,1,5,3,6,0,15,18,36,13,Friend or Family Recommendation
-Togo,3,0,0,1,0,0,10,4,13,2,Friend or Family Recommendation
-Tonga,1,0,0,0,0,0,0,0,1,0,Price
-Trinidad and Tobago,2,0,0,0,1,0,4,2,14,5,Friend or Family Recommendation
-Tunisia,13,0,6,6,11,3,29,11,67,6,Friend or Family Recommendation
-Turkey,5,0,7,4,2,1,12,15,33,17,Friend or Family Recommendation
-Uganda,0,1,0,0,0,0,9,3,15,4,Friend or Family Recommendation
-Ukraine,2,0,1,0,3,1,8,8,15,10,Friend or Family Recommendation
-United Arab Emirates,8,2,5,0,4,1,8,12,38,17,Friend or Family Recommendation
-United Kingdom,185,137,214,59,124,19,444,529,1219,787,Friend or Family Recommendation
-United States,754,374,908,154,447,99,1938,2106,4846,2599,Friend or Family Recommendation
-Uruguay,9,1,20,34,21,24,31,20,57,23,Friend or Family Recommendation
-Uzbekistan,0,0,1,0,0,0,0,0,0,0,Safety
-Vanuatu,1,0,0,0,0,0,1,0,0,0,Price
-Venezuela,28,8,51,79,23,36,75,36,159,104,Friend or Family Recommendation
-Vietnam,3,3,1,2,1,2,11,10,19,6,Friend or Family Recommendation
-"Virgin Islands, U.S.",1,0,0,0,0,0,0,0,1,1,Price
-Zambia,2,0,1,0,0,0,2,1,4,3,Friend or Family Recommendation
-Zimbabwe,4,0,0,2,2,1,3,2,22,3,Friend or Family Recommendation
+Country,Price,Features,Safety,Security,Privacy,Reliability,User Reviews,Expert Recommendation,Friend or Family Recommendation,Convenience,Lowest Priority,mapID
+Afghanistan,0,0,1,0,1,0,0,0,1,1,Safety,4
+Albania,0,2,0,0,1,1,11,4,15,5,Friend or Family Recommendation,8
+Algeria,42,11,21,10,24,16,86,29,116,20,Friend or Family Recommendation,12
+Andorra,0,0,0,1,0,0,0,0,3,0,Friend or Family Recommendation,20
+Angola,4,0,0,0,0,0,0,1,4,1,Price,24
+Argentina,65,11,170,170,76,140,173,136,458,181,Friend or Family Recommendation,32
+Armenia,1,0,0,0,0,0,0,1,1,2,Convenience,51
+Aruba,1,0,0,0,0,0,0,0,0,0,Price,533
+Australia,107,41,118,23,67,10,273,228,644,370,Friend or Family Recommendation,36
+Austria,92,19,145,30,78,11,260,248,442,194,Friend or Family Recommendation,40
+Azerbaijan,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation,31
+Bahamas,0,0,0,0,0,0,0,0,2,1,Friend or Family Recommendation,44
+Bahrain,2,0,1,0,0,0,1,4,3,1,Expert Recommendation,48
+Bangladesh,10,5,4,7,8,2,30,14,43,57,Convenience,50
+Barbados,2,0,0,0,1,0,2,0,4,3,Friend or Family Recommendation,52
+Belarus,1,1,2,0,0,1,3,6,4,2,Expert Recommendation,112
+Belgium,107,48,111,53,109,23,389,343,565,86,Friend or Family Recommendation,56
+Belize,0,0,0,0,0,0,0,2,2,2,Expert Recommendation,84
+Benin,6,1,1,1,1,1,8,1,21,1,Friend or Family Recommendation,204
+Bhutan,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation,64
+Bolivia,8,2,9,17,10,8,21,11,49,22,Friend or Family Recommendation,68
+Bosnia and Herzegovina,3,1,1,0,3,0,2,2,12,8,Friend or Family Recommendation,70
+Botswana,1,0,0,1,1,0,1,0,2,0,Friend or Family Recommendation,72
+Brazil,347,56,289,137,352,105,1341,843,2617,2152,Friend or Family Recommendation,76
+Brunei Darussalam,2,0,0,0,1,0,1,0,6,2,Friend or Family Recommendation,96
+Bulgaria,4,0,7,3,7,4,15,10,24,21,Friend or Family Recommendation,100
+Burkina Faso,0,1,0,0,2,0,4,5,16,2,Friend or Family Recommendation,854
+Burundi,2,1,0,1,0,0,3,1,3,0,User Reviews,108
+Cambodia,1,0,1,0,0,1,6,4,9,3,Friend or Family Recommendation,116
+Cameroon,17,1,8,3,3,3,27,14,52,4,Friend or Family Recommendation,120
+Canada,209,82,206,52,118,24,548,460,989,448,Friend or Family Recommendation,124
+Cape Verde,0,0,0,0,1,0,0,1,1,0,Privacy,132
+Cayman Islands,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation,136
+Central African Republic,0,0,0,0,0,0,1,0,0,0,User Reviews,140
+Chad,0,0,0,0,0,0,2,0,1,1,User Reviews,148
+Chile,32,5,78,68,33,63,80,60,254,92,Friend or Family Recommendation,152
+China,3,0,3,1,0,1,5,10,26,8,Friend or Family Recommendation,158
+Christmas Island,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation,162
+Colombia,68,6,117,117,49,92,170,69,376,198,Friend or Family Recommendation,170
+Congo,1,0,1,0,0,0,0,1,3,0,Friend or Family Recommendation,180
+Costa Rica,11,1,18,22,14,24,25,16,91,33,Friend or Family Recommendation,188
+Croatia,8,2,11,3,12,3,13,19,32,26,Friend or Family Recommendation,191
+Cuba,1,1,3,9,1,0,7,1,8,7,Security,192
+Cyprus,1,2,0,1,3,0,6,2,7,1,Friend or Family Recommendation,196
+Czech Republic,1,1,5,4,5,1,5,16,42,29,Friend or Family Recommendation,203
+Denmark,9,6,13,5,6,2,16,19,58,26,Friend or Family Recommendation,208
+Djibouti,0,0,0,0,0,1,0,2,1,0,Expert Recommendation,262
+Dominica,0,0,0,0,0,0,0,1,0,0,Expert Recommendation,214
+Dominican Republic,0,1,13,11,6,4,8,9,33,12,Friend or Family Recommendation,214
+Ecuador,26,11,35,62,16,49,70,34,147,106,Friend or Family Recommendation,218
+Egypt,2,1,3,2,2,1,17,10,24,11,Friend or Family Recommendation,818
+El Salvador,7,2,16,25,3,18,14,18,55,30,Friend or Family Recommendation,222
+Equatorial Guinea,0,0,0,0,0,0,0,1,0,0,Expert Recommendation,226
+Estonia,2,1,3,2,1,1,2,2,18,7,Friend or Family Recommendation,233
+Ethiopia,1,0,0,0,1,1,3,0,5,0,Friend or Family Recommendation,231
+Fiji,1,0,0,0,1,0,3,2,4,0,Friend or Family Recommendation,242
+Finland,8,7,9,3,5,1,24,27,55,37,Friend or Family Recommendation,246
+France,1263,569,1696,765,1387,251,4667,5167,6224,672,Friend or Family Recommendation,250
+French Guiana,4,0,0,2,3,0,3,8,9,0,Friend or Family Recommendation,254
+French Polynesia,7,3,3,0,4,1,11,13,20,4,Friend or Family Recommendation,258
+Gabon,2,2,1,0,1,0,3,2,8,2,Friend or Family Recommendation,266
+Gambia,0,0,0,0,0,0,0,0,2,0,Friend or Family Recommendation,270
+Georgia,0,0,1,0,0,0,0,0,4,0,Friend or Family Recommendation,268
+Germany,974,208,1574,442,861,134,3051,2692,4682,2411,Friend or Family Recommendation,276
+Ghana,11,1,1,0,1,0,10,6,17,9,Friend or Family Recommendation,288
+Gibraltar,0,0,0,0,0,0,1,0,1,0,User Reviews,292
+Greece,10,5,8,14,7,8,24,30,109,35,Friend or Family Recommendation,300
+Guadeloupe,3,0,5,1,3,0,15,9,27,1,Friend or Family Recommendation,312
+Guam,0,0,1,0,0,0,1,0,1,0,Safety,316
+Guatemala,9,3,21,19,5,19,24,9,55,33,Friend or Family Recommendation,320
+Guernsey,1,0,1,0,2,0,0,1,3,1,Friend or Family Recommendation,831
+Guinea,1,0,0,0,1,0,3,2,5,0,Friend or Family Recommendation,624
+Guyana,0,0,1,1,0,0,1,0,4,2,Friend or Family Recommendation,328
+Haiti,3,0,0,0,0,0,3,1,3,1,Price,332
+Holy See (Vatican City State),0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation,336
+Honduras,2,2,9,11,1,3,13,5,23,15,Friend or Family Recommendation,340
+Hong Kong,1,2,3,1,4,2,6,4,15,11,Friend or Family Recommendation,344
+Hungary,3,3,3,0,4,0,11,8,29,20,Friend or Family Recommendation,348
+Iceland,3,1,2,0,3,0,7,1,4,1,User Reviews,352
+India,136,27,64,33,94,67,290,269,959,395,Friend or Family Recommendation,356
+Indonesia,25,10,13,7,16,17,73,52,168,73,Friend or Family Recommendation,360
+"Iran, Islamic Republic of",10,7,7,1,8,6,12,7,45,36,Friend or Family Recommendation,364
+Iraq,0,1,0,1,0,0,3,1,5,4,Friend or Family Recommendation,368
+Ireland,9,4,17,5,12,1,37,34,87,56,Friend or Family Recommendation,372
+Isle of Man,1,0,0,2,1,0,1,1,3,0,Friend or Family Recommendation,833
+Israel,4,3,10,3,6,3,17,9,35,19,Friend or Family Recommendation,376
+Italy,568,155,1015,1270,1695,187,3081,1974,9015,1068,Friend or Family Recommendation,380
+Jamaica,1,0,0,0,0,0,3,4,5,0,Friend or Family Recommendation,388
+Japan,12,2,7,4,7,3,22,16,37,6,Friend or Family Recommendation,392
+Jersey,0,0,0,0,0,0,1,0,7,3,Friend or Family Recommendation,832
+Jordan,3,0,1,1,0,0,0,1,7,6,Friend or Family Recommendation,400
+Kazakhstan,0,0,0,0,1,0,2,0,1,2,User Reviews,398
+Kenya,10,1,6,3,8,0,22,24,82,16,Friend or Family Recommendation,404
+"Korea, Republic of",1,0,0,0,1,0,7,4,15,1,Friend or Family Recommendation,410
+Kuwait,0,0,0,0,1,1,4,3,6,1,Friend or Family Recommendation,414
+Kyrgyzstan,0,1,0,0,0,0,0,0,0,0,Features,417
+Lao People's Democratic Republic,0,0,0,0,1,0,1,0,1,0,Privacy,418
+Latvia,0,1,2,1,1,0,4,6,8,6,Friend or Family Recommendation,428
+Lebanon,2,0,1,0,0,0,6,5,13,3,Friend or Family Recommendation,422
+Lesotho,1,0,0,0,0,0,1,0,0,1,Price,426
+Liberia,0,0,0,0,0,0,1,1,1,0,User Reviews,430
+Libya,1,0,0,0,0,0,0,0,0,0,Price,434
+Liechtenstein,0,0,4,0,0,0,0,0,2,1,Safety,438
+Lithuania,1,0,1,2,6,1,6,7,15,6,Friend or Family Recommendation,440
+Luxembourg,5,4,12,2,8,2,25,26,53,7,Friend or Family Recommendation,442
+Macedonia,1,1,1,0,1,0,0,2,3,2,Friend or Family Recommendation,807
+Madagascar,13,3,9,1,6,4,28,12,40,2,Friend or Family Recommendation,450
+Malawi,0,0,1,1,0,0,0,0,4,0,Friend or Family Recommendation,454
+Malaysia,10,6,5,3,13,3,32,23,88,30,Friend or Family Recommendation,458
+Maldives,0,0,0,0,0,0,3,0,1,1,User Reviews,462
+Mali,3,0,1,0,1,0,2,1,12,2,Friend or Family Recommendation,466
+Malta,2,1,1,0,1,1,3,1,8,6,Friend or Family Recommendation,470
+Marshall Islands,1,0,0,0,0,0,0,0,0,0,Price,584
+Martinique,4,1,1,2,1,1,18,13,21,2,Friend or Family Recommendation,474
+Mauritania,0,0,0,1,0,0,1,0,0,1,Security,478
+Mauritius,2,1,1,1,0,0,7,4,12,13,Convenience,480
+Mayotte,1,2,0,2,0,0,3,0,4,1,Friend or Family Recommendation,175
+Mexico,140,27,288,382,143,305,427,244,1254,617,Friend or Family Recommendation,484
+"Micronesia, Federated States of",0,0,0,0,0,0,0,0,0,1,Convenience,583
+"Moldova, Republic of",0,1,0,0,0,0,0,0,5,0,Friend or Family Recommendation,498
+Monaco,2,0,1,1,0,2,3,2,3,1,User Reviews,492
+Mongolia,0,0,0,1,0,1,0,1,2,1,Friend or Family Recommendation,496
+Montenegro,0,0,0,1,0,0,1,1,4,3,Friend or Family Recommendation,499
+Morocco,24,6,14,7,11,10,67,43,106,24,Friend or Family Recommendation,504
+Mozambique,0,0,1,0,0,1,4,1,3,1,User Reviews,508
+Myanmar,2,1,0,0,2,0,5,4,10,5,Friend or Family Recommendation,104
+Namibia,3,1,2,0,0,0,2,1,5,3,Friend or Family Recommendation,516
+Nepal,7,0,1,2,3,1,6,4,33,13,Friend or Family Recommendation,524
+Netherlands,25,17,37,15,21,8,68,67,196,76,Friend or Family Recommendation,528
+New Caledonia,8,1,4,2,3,0,24,22,37,3,Friend or Family Recommendation,540
+New Zealand,16,16,23,9,17,3,66,40,150,94,Friend or Family Recommendation,554
+Nicaragua,1,1,5,9,5,0,7,5,23,16,Friend or Family Recommendation,558
+Niger,1,0,0,0,0,0,2,1,3,0,Friend or Family Recommendation,566
+Nigeria,20,0,4,5,8,3,20,11,60,10,Friend or Family Recommendation,566
+Northern Mariana Islands,0,0,0,0,0,0,0,1,0,0,Expert Recommendation,580
+Norway,9,7,10,2,5,1,21,21,52,31,Friend or Family Recommendation,578
+Oman,0,0,1,0,0,1,0,1,3,3,Friend or Family Recommendation,512
+Pakistan,9,4,9,3,7,3,24,15,42,35,Friend or Family Recommendation,586
+Palestinian Territory,0,0,0,0,0,0,0,0,1,1,Friend or Family Recommendation,275
+Panama,2,0,7,8,2,7,9,5,27,10,Friend or Family Recommendation,591
+Papua New Guinea,1,0,0,0,0,0,1,0,1,1,Price,598
+Paraguay,6,1,10,18,8,7,12,13,42,14,Friend or Family Recommendation,600
+Peru,33,5,23,29,11,39,58,20,116,80,Friend or Family Recommendation,604
+Philippines,15,5,2,2,13,4,56,25,123,38,Friend or Family Recommendation,608
+Poland,6,2,9,5,7,0,22,27,47,21,Friend or Family Recommendation,616
+Portugal,10,2,10,10,3,4,32,30,75,42,Friend or Family Recommendation,620
+Puerto Rico,3,1,2,2,2,0,4,5,26,6,Friend or Family Recommendation,630
+Qatar,0,2,0,0,0,0,2,4,8,5,Friend or Family Recommendation,634
+Romania,11,3,6,6,5,6,25,24,100,45,Friend or Family Recommendation,642
+Russian Federation,3,5,7,2,7,2,14,15,47,16,Friend or Family Recommendation,643
+Rwanda,0,0,0,0,1,0,0,1,3,4,Convenience,646
+Saint Kitts and Nevis,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation,659
+Saint Lucia,0,0,0,0,0,0,0,0,2,0,Friend or Family Recommendation,662
+Saint Martin,0,0,0,1,0,0,0,0,0,0,Security,663
+Saint Pierre and Miquelon,1,0,0,1,0,0,1,2,1,0,Expert Recommendation,666
+Saint Vincent and the Grenadines,0,0,0,0,0,0,0,1,0,0,Expert Recommendation,670
+San Marino,0,0,0,0,2,0,2,1,7,1,Friend or Family Recommendation,674
+Saudi Arabia,2,0,4,1,3,0,11,5,23,4,Friend or Family Recommendation,682
+Senegal,8,1,2,1,1,1,18,13,31,4,Friend or Family Recommendation,686
+Serbia,6,1,3,5,9,1,19,16,48,28,Friend or Family Recommendation,688
+Seychelles,0,0,0,0,0,0,0,1,0,0,Expert Recommendation,690
+Sierra Leone,0,0,0,0,1,0,1,0,0,1,Privacy,694
+Singapore,5,1,4,1,8,1,14,20,44,20,Friend or Family Recommendation,702
+Slovakia,2,1,1,0,1,0,5,8,12,13,Convenience,703
+Slovenia,3,2,1,0,4,1,7,6,27,9,Friend or Family Recommendation,705
+Solomon Islands,0,0,0,0,0,0,1,0,0,0,User Reviews,90
+Somalia,0,0,0,0,0,0,0,0,0,1,Convenience,706
+South Africa,14,2,26,6,10,4,50,33,132,40,Friend or Family Recommendation,710
+South Sudan,0,0,0,0,0,0,0,0,1,0,Friend or Family Recommendation,728
+Spain,129,33,271,247,168,362,360,351,909,568,Friend or Family Recommendation,724
+Sri Lanka,2,0,1,1,1,1,9,3,17,24,Convenience,144
+Sudan,0,0,0,0,0,0,3,0,7,0,Friend or Family Recommendation,729
+Suriname,0,0,0,0,0,0,0,0,0,1,Convenience,740
+Swaziland,1,0,0,0,0,0,0,0,1,2,Convenience,748
+Sweden,12,8,18,3,10,4,24,32,94,36,Friend or Family Recommendation,752
+Switzerland,206,40,198,69,130,29,520,447,710,233,Friend or Family Recommendation,756
+Syrian Arab Republic,0,0,0,0,0,0,2,1,5,2,Friend or Family Recommendation,760
+Taiwan,2,0,3,2,0,0,7,4,16,5,Friend or Family Recommendation,158
+Tajikistan,0,0,0,0,0,0,0,0,0,1,Convenience,762
+"Tanzania, United Republic of",2,3,1,0,2,0,4,1,11,4,Friend or Family Recommendation,834
+Thailand,9,1,5,3,6,0,15,18,36,13,Friend or Family Recommendation,764
+Togo,3,0,0,1,0,0,10,4,13,2,Friend or Family Recommendation,768
+Tonga,1,0,0,0,0,0,0,0,1,0,Price,776
+Trinidad and Tobago,2,0,0,0,1,0,4,2,14,5,Friend or Family Recommendation,780
+Tunisia,13,0,6,6,11,3,29,11,67,6,Friend or Family Recommendation,788
+Turkey,5,0,7,4,2,1,12,15,33,17,Friend or Family Recommendation,792
+Uganda,0,1,0,0,0,0,9,3,15,4,Friend or Family Recommendation,800
+Ukraine,2,0,1,0,3,1,8,8,15,10,Friend or Family Recommendation,804
+United Arab Emirates,8,2,5,0,4,1,8,12,38,17,Friend or Family Recommendation,784
+United Kingdom,185,137,214,59,124,19,444,529,1219,787,Friend or Family Recommendation,826
+United States,754,374,908,154,447,99,1938,2106,4846,2599,Friend or Family Recommendation,840
+Uruguay,9,1,20,34,21,24,31,20,57,23,Friend or Family Recommendation,858
+Uzbekistan,0,0,1,0,0,0,0,0,0,0,Safety,860
+Vanuatu,1,0,0,0,0,0,1,0,0,0,Price,548
+Venezuela,28,8,51,79,23,36,75,36,159,104,Friend or Family Recommendation,862
+"Virgin Islands, U.S.",1,0,0,0,0,0,0,0,1,1,Price,850
+Zambia,2,0,1,0,0,0,2,1,4,3,Friend or Family Recommendation,894
+Zimbabwe,4,0,0,2,2,1,3,2,22,3,Friend or Family Recommendation,716
