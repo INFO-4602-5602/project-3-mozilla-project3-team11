@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<!--Template for this code was from https://bl.ocks.org/mbostock/3886208-->
+<style>
+
+    /*.axis .domain {*/
+        /*display: none;*/
+    /*}*/
+
+    .axis { font: 18px sans-serif; }
+
+
+</style>
+
+<head>
+    <title>Project 3 Viz 1</title>
+    <link rel="stylesheet" type="text/css"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></link>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--Put your D3 import statement between these two lines-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <!--Put your D3 import statement between these two lines-->
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <h4 id="title">Thinking about a future in which so much of your world is connected to the internet leaves you feeling:</h4>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8" style="margin: 0 auto">
+            <svg width="960" height="500" id="svg1"></svg>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-2"></div>
+        <div class="col-xs-8">
+            <button type='button' class='btn btn-primary btn-lg' onclick="changeViz()" id="button">Switch to excitement about the future</button>
+        </div>
+        <div class="col-xs-2"></div>
+    </div>
+
+</div>
+
+<script>
+    var currentViz = false;
+</script>
+<script>
+    function changeViz() {
+        $("#svg1").empty();
+
+        if(currentViz){
+            vizA()
+            $('#title').text('Thinking about a future in which so much of your world is connected to the internet leaves you feeling:')
+            $("#button").text('Switch to excitement about the future');
+        }
+        else{
+            vizB()
+            $('#title').text('What are you most excited about as we move toward a more digitally connected future?')
+            $("#button").text('Switch to feelings about the future');
+        }
+        currentViz = !currentViz
+    }
+</script>
+<script>
+    function vizA() {
+        var svg = d3.select("svg"),
+            margin = {top: 20, right: 20, bottom: 30, left: 40},
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom,
+            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scaleBand()
+            .rangeRound([0, width])
+            .paddingInner(0.05)
+            .align(0.1);
+
+        var y = d3.scaleLinear()
+            .rangeRound([height, 0]);
+
+        var z = d3.scaleOrdinal()
+            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c"]);
+
+        d3.csv("viz1_fear.csv", function (d, i, columns) {
+            for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
+            d.total = t;
+            return d;
+        }, function (error, data) {
+            if (error) throw error;
+
+            var keys = data.columns.slice(1);
+
+            x.domain(data.map(function (d) {
+                return d['Skill Level'];
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return d.total;
+            })]).nice();
+            z.domain(keys);
+
+            g.append("g")
+                .selectAll("g")
+                .data(d3.stack().keys(keys)(data))
+                .enter().append("g")
+                .attr("fill", function (d) {
+                    return z(d.key);
+                })
+                .selectAll("rect")
+                .data(function (d) {
+                    return d;
+                })
+                .enter().append("rect")
+                .attr("x", function (d) {
+                    return x(d.data['Skill Level']);
+                })
+                .attr("y", function (d) {
+                    return y(d[1]);
+                })
+                .attr("height", function (d) {
+                    return y(d[0]) - y(d[1]);
+                })
+                .attr("width", x.bandwidth());
+
+            g.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            g.append("g")
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(null, "s"))
+                .append("text")
+                .attr("x", 2)
+                .attr("y", y(y.ticks().pop()) + 0.5)
+                .attr("dy", "0.32em")
+                .attr("fill", "#000")
+                .attr("font-weight", "bold")
+                .attr("text-anchor", "start")
+                .text("# of Responses");
+
+            var legend = g.append("g")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", 11)
+                .attr("text-anchor", "end")
+                .selectAll("g")
+                .data(keys.slice().reverse())
+                .enter().append("g")
+                .attr("transform", function (d, i) {
+                    return "translate(0," + i * 20 + ")";
+                });
+
+            legend.append("rect")
+                .attr("x", width - 19)
+                .attr("width", 19)
+                .attr("height", 19)
+                .attr("fill", z);
+
+            legend.append("text")
+                .attr("x", width - 24)
+                .attr("y", 9.5)
+                .attr("dy", "0.32em")
+                .text(function (d) {
+                    return d;
+                });
+
+        });
+    }
+</script>
+
+<script>
+    function vizB() {
+        var svg = d3.select("svg"),
+            margin = {top: 20, right: 20, bottom: 30, left: 40},
+            width = +svg.attr("width") - margin.left - margin.right,
+            height = +svg.attr("height") - margin.top - margin.bottom,
+            g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var x = d3.scaleBand()
+            .rangeRound([0, width])
+            .paddingInner(0.05)
+            .align(0.1);
+
+        var y = d3.scaleLinear()
+            .rangeRound([height, 0]);
+
+        var z = d3.scaleOrdinal()
+            .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", 'red']);
+
+        d3.csv("viz1_excitment.csv", function (d, i, columns) {
+            for (i = 1, t = 0; i < columns.length; ++i) t += d[columns[i]] = +d[columns[i]];
+            d.total = t;
+            return d;
+        }, function (error, data) {
+            if (error) throw error;
+
+            var keys = data.columns.slice(1);
+
+            x.domain(data.map(function (d) {
+                return d['Skill Level'];
+            }));
+            y.domain([0, d3.max(data, function (d) {
+                return d.total;
+            })]).nice();
+            z.domain(keys);
+
+            g.append("g")
+                .selectAll("g")
+                .data(d3.stack().keys(keys)(data))
+                .enter().append("g")
+                .attr("fill", function (d) {
+                    return z(d.key);
+                })
+                .selectAll("rect")
+                .data(function (d) {
+                    return d;
+                })
+                .enter().append("rect")
+                .attr("x", function (d) {
+                    return x(d.data['Skill Level']);
+                })
+                .attr("y", function (d) {
+                    return y(d[1]);
+                })
+                .attr("height", function (d) {
+                    return y(d[0]) - y(d[1]);
+                })
+                .attr("width", x.bandwidth());
+
+            g.append("g")
+                .attr("class", "axis")
+                .attr("transform", "translate(0," + height + ")")
+                .call(d3.axisBottom(x));
+
+            g.append("g")
+                .attr("class", "axis")
+                .call(d3.axisLeft(y).ticks(null, "s"))
+                .append("text")
+                .attr("x", 2)
+                .attr("y", y(y.ticks().pop()) + 0.5)
+                .attr("dy", "0.32em")
+                .attr("fill", "#000")
+                .attr("font-weight", "bold")
+                .attr("text-anchor", "start")
+                .text("# of Responses");
+
+            var legend = g.append("g")
+                .attr("font-family", "sans-serif")
+                .attr("font-size", 11)
+                .attr("text-anchor", "end")
+                .selectAll("g")
+                .data(keys.slice().reverse())
+                .enter().append("g")
+                .attr("transform", function (d, i) {
+                    return "translate(0," + i * 20 + ")";
+                });
+
+            legend.append("rect")
+                .attr("x", width - 19)
+                .attr("width", 19)
+                .attr("height", 19)
+                .attr("fill", z);
+
+            legend.append("text")
+                .attr("x", width - 24)
+                .attr("y", 9.5)
+                .attr("dy", "0.32em")
+                .text(function (d) {
+                    return d;
+                });
+        });
+    }
+</script>
+
+<script>
+    vizA()
+</script>
+
+</body>
+</html>
