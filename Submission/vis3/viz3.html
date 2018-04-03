@@ -10,14 +10,13 @@
 
 <body>
     <div id='pieChart'>
-        <h1>Languages</h1>
+        <h1>Languages Spoken</h1>
     </div>
 
     <div id='barGraph'>
         <h1 id='barTitle'></h1>
         <svg width="809" height="500" id="barGraphSVG"></svg>
     </div>
-
     
     <script type='text/javascript'>
         
@@ -47,7 +46,7 @@
                      .padAngle(0.02)
                      .cornerRadius(cornerRadius);
 
-        d3.csv('visualization3.csv', function(error, data) {
+        d3.csv('viz3.csv', function(error, data) {
             if (error) throw error;
 
             var arc = svgPie.selectAll('.arc')
@@ -60,13 +59,8 @@
                 .attr('d', path)
                 .attr('fill', function(d) { return color(d.data['Language']); })
             
-            arc.on('mouseover', function(d) {
+            arc.on('mouseover', function(d, i, j) {
                       //console.log(d3.select(this));
-                      /*
-                      d3.select(this)
-                        .enter()
-                        .attr('fill', function(d) { return 'black'; })
-                      */
                     })
                .on('mouseout', function(d) {
                       //console.log(d3.select(this));
@@ -103,7 +97,7 @@
             svgBar.append('g')
                     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
-            d3.csv('visualization3.csv', function(error, data) {
+            d3.csv('viz3.csv', function(error, data) {
                 if (error) throw error;
 
                 document.getElementById('barTitle').innerHTML = 'Understood Concepts: ' + data[languageID]['Language'] + ' Speakers';
