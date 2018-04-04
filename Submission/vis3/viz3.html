@@ -22,13 +22,13 @@
         
         var width = 1000,
             height = 400,
-            radius = Math.min(width, height) / 2;
+            radius = 200;
 
         var svgPie = d3.select('#pieChart').append('svg')
                        .attr('width', width)
                        .attr('height', height);
         var g = svgPie.append('g')
-             .attr('transform', 'translate(' + width / 3 + ',' + height / 2 + ')');
+             .attr('transform', 'translate(' + width / 4 + ',' + height / 2 + ')');
 
         var color = d3.scaleOrdinal(['#27ae60', '#e74c3c', '#f1c40f', '#3498db', '#ee7600', '#8e44ad']);
 
@@ -68,7 +68,7 @@
                              .data(data)
                              .enter().append("g")
                              .attr("transform", function (d, i) {
-                                 return "translate(" + -600 + "," + i * 20 + ")";
+                                 return "translate(" + -700 + "," + i * 20 + ")";
                              });
 
             legend.append("rect")
@@ -78,7 +78,7 @@
                   .attr("fill", function(d) { return color(d['Language']); });
 
             legend.append("text")
-                  .attr("x", width - 24)
+                  .attr("x", width)
                   .attr("y", 9.5)
                   .attr("dy", "0.3em")
                   .text(function (d) {
