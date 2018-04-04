@@ -52,9 +52,9 @@ Python >= 2.7
 <h5> Command to Run Code <h5>
 
 Set up a python server using one of the following two commands based on the python version installed on your computer:
-# If Python version is 3.X
+<h6> If Python version is 3.X </h6>
 python -m http.server
-# If Python version is 2.X
+<h6> If Python version is 2.X </h6>
 python -m SimpleHTTPServer
 
 In your web browser, access localhost:8000. Navigate to the folder corresponding to the visualization you would like to see (vis1, vis2, or vis3) and click on the .html file.
