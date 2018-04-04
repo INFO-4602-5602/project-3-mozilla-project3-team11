@@ -17,3 +17,8 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
+.legend {
+    font-size: 14px;
+    text-anchor: end;
+}
