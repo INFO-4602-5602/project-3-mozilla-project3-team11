@@ -24,7 +24,7 @@ for language in languageList:
 
 '''
 
-fid = open('viz3.csv', 'w')
+fid = open('viz3_new.csv', 'w')
 fid.write('Language,Total,')
 for header in explain_list:
 	fid.write(header)
@@ -43,7 +43,7 @@ for language in languageList:
 	for item in explain_list:
 		dat2 = dat[item][ind_language]
 
-		count = sum(dat2.isnull())
+		count = sum(dat2.notnull())
 
 		fid.write(str(count))
 

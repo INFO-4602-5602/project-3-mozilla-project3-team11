@@ -20,7 +20,7 @@
     
     <script type='text/javascript'>
         
-        var width = 800,
+        var width = 600,
             height = 400,
             radius = Math.min(width, height) / 2;
 
@@ -71,7 +71,28 @@
                       console.log(j);
                       updateBars(i);
                     });
+            
+            var legend = svgPie.selectAll('.legend')
+                               .data(pie(data))
+                               .enter().append("g")
+                               .attr("transform", function (d, i) {
+                                   console.log(d);
+                                   return "translate(" + (width - 200) + "," + (i * 20) + ")";
+                               });
+
+            legend.append("rect")
+                .attr("width", 20)
+                .attr("height", 20)
+                .attr("fill", function(d) { return color(d.data['Language']); });
+
+            legend.append("text")
+                .attr("x", 5)
+                .attr("y", 9.5)
+                .attr("dy", "0.32em")
+                .text(function (d) { return d.Explain; });
+
         });
+
     </script>
     
 
@@ -79,7 +100,7 @@
         function updateBars(languageID) {
             $("#barGraphSVG").empty();
 
-            var margin = {top: 20, right: 20, bottom: 50, left: 80},
+            var margin = {top: 20, right: 20, bottom: 160, left: 100},
                 width = 960 - margin.left - margin.right,
                 height = 500 - margin.top - margin.bottom;
 
@@ -133,25 +154,31 @@
                 // Add the X Axis
                 svgBar.append('g')
                       .attr('transform', 'translate(0, ' + height + ')')
-                      .call(d3.axisBottom(x));
+                      .call(d3.axisBottom(x))
+                      .attr('class', 'tickLabels')
+                      .selectAll("text")  
+                        .style("text-anchor", "end")
+                        .attr("dx", "-.8em")
+                        .attr("dy", ".15em")
+                        .attr("transform", "rotate(-65)");
 
                 // Add the Y Axis
                 svgBar.append('g')
-                      .call(d3.axisLeft(y));
+                      .call(d3.axisLeft(y))
+                      .attr('class', 'tickLabels');
 
                 // add the text labels
                 var xLabel = svgBar.append('text')
                                      .attr('class', 'label')
                                      .text('Concept')
                                      .attr('x', width / 2)
-                                     .attr('y', height + 40);
+                                     .attr('y', height + 130);
                 var yLabel = svgBar.append('text')
                                      .attr('class', 'label')
                                      .text('Count')
                                      .attr('x', -height / 2)
-                                     .attr('y', -60)
+                                     .attr('y', -80)
                                      .attr('transform', 'rotate(-90)');
-         
             });
         }
     </script>
