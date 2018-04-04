@@ -64,11 +64,12 @@
                     });
 
                var legend = g.append("g")
+                             .attr('class', 'legend')
                              .selectAll("g")
                              .data(data)
                              .enter().append("g")
                              .attr("transform", function (d, i) {
-                                 return "translate(" + -700 + "," + i * 20 + ")";
+                                 return "translate(" + -600 + "," + i * 20 + ")";
                              });
 
             legend.append("rect")
@@ -78,7 +79,7 @@
                   .attr("fill", function(d) { return color(d['Language']); });
 
             legend.append("text")
-                  .attr("x", width)
+                  .attr("x", width - 24)
                   .attr("y", 9.5)
                   .attr("dy", "0.3em")
                   .text(function (d) {
