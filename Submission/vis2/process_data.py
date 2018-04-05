@@ -151,9 +151,9 @@ allhighestpriorityvalues = np.concatenate((allhighestpriorityvalues,mapids.T),ax
 
 alllowestpriorityvalues = np.concatenate((alllowestpriorityvalues,mapids.T),axis=1)
 
-column_names_high = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Highest Priority','mapID']
+column_names_high = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Priority','mapID']
 
-column_names_low = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Lowest Priority','mapID']
+column_names_low = ['Country','Price','Features','Safety','Security','Privacy','Reliability','User Reviews','Expert Recommendation','Friend or Family Recommendation','Convenience','Priority','mapID']
 
 column_names1_high = []
 column_names1_high.append(column_names_high)

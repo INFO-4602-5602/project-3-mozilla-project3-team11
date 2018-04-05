@@ -1,4 +1,4 @@
-Country,Price,Features,Safety,Security,Privacy,Reliability,User Reviews,Expert Recommendation,Friend or Family Recommendation,Convenience,Highest Priority,mapID
+Country,Price,Features,Safety,Security,Privacy,Reliability,User Reviews,Expert Recommendation,Friend or Family Recommendation,Convenience,Priority,mapID
 Afghanistan,2,0,1,0,1,0,0,0,0,0,Price,4
 Albania,19,8,0,5,2,3,0,0,0,2,Price,8
 Algeria,79,45,8,31,41,18,9,16,3,125,Convenience,12
