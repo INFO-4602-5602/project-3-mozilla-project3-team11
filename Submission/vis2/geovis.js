@@ -75,7 +75,7 @@ function selectLocationScope(id){
   var svg = d3.selectAll("svg#countryMain");
   var g = svg.append("g");
 
-  var margin = {top: 10, right: 0, bottom: 100, left: 100};
+  var margin = {top: 10, right: 0, bottom: 190, left: 100};
 
   var width = 450 - margin.left - margin.right;
 	var height = 350 - margin.top - margin.bottom;
