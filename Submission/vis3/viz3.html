@@ -89,7 +89,6 @@
         });
 
     </script>
-    
 
     <script type='text/javascript'>
         function updateBars(languageID) {
@@ -151,7 +150,7 @@
                       .attr('transform', 'translate(0, ' + height + ')')
                       .call(d3.axisBottom(x))
                       .attr('class', 'tickLabels')
-                      .selectAll("text")  
+                      .selectAll("text")
                         .style("text-anchor", "end")
                         .attr("dx", "-.8em")
                         .attr("dy", ".15em")
@@ -170,7 +169,7 @@
                                      .attr('y', height + 130);
                 var yLabel = svgBar.append('text')
                                      .attr('class', 'label')
-                                     .text('Count')
+                                     .text('# of Responses')
                                      .attr('x', -height / 2)
                                      .attr('y', -80)
                                      .attr('transform', 'rotate(-90)');

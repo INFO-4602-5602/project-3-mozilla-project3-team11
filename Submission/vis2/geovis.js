@@ -61,7 +61,7 @@ function selectLocationScope(id){
 
   d3.select("svg#countryMain").text('');
 
-  var bardata = [{people:parseInt(thisCountryData.Price), factor:'Privacy'},
+  var bardata = [{people:parseInt(thisCountryData.Price), factor:'Price'},
                  {people:parseInt(thisCountryData.Features),factor:'Features'},
                  {people:parseInt(thisCountryData.Safety),factor:'Safety'},
                  {people:parseInt(thisCountryData.Security),factor:'Security'},
@@ -85,14 +85,14 @@ function selectLocationScope(id){
   });
 
   var svg = d3.select("svg#countryMain").append("svg")
-              .attr("width",width)
-              .attr("height",height)
+              .attr('width', width + margin.left + margin.right)
+              .attr('height', height + margin.top + margin.bottom)
               .append("g")
               .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
   var factorScale = d3.scale.ordinal()
               .domain(factors)
-              .rangeRoundBands([0, width],0.05);
+              .rangeRoundBands([0, width/2],0.05);
               //.paddingInner(0.1);
 
   //var bandwidth = factorScale.bandwidth();
@@ -117,12 +117,20 @@ function selectLocationScope(id){
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
       .call(xAxis)
+      .selectAll("text")
+                        .style("text-anchor", "end")
+                        .attr("dx", "-.8em")
+                        .attr("dy", ".15em")
+                        .attr("transform", "rotate(-65)");;
+      /*
       .append("text")
       .style("text-anchor", "end")
       .attr("dx", ".8em")
       .attr("dy", ".55em")
-      .attr("transform", "rotate(0)" )
-      .text("Number of People Voted");
+      .attr("transform", "rotate(0)")
+      .text("Factors");
+      */
+                      
 
   svg.append("g")
       .attr("class", "y axis")
@@ -132,7 +140,7 @@ function selectLocationScope(id){
       //.attr("y", 6)
       .attr("dy", "-5em")
       .style("text-anchor", "middle")
-      .text("Number of People Voted");
+      .text("# of People Voted");
 
   svg.selectAll("bar")
              .data(bardata)
