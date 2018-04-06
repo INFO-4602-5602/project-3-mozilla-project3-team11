@@ -19,7 +19,9 @@ For the second question, most of Ultra Nerds and Technically Savvy individuals w
 <p>Corresponding folder: vis1 </p>
 
 <h3> Visualization #2: </h3>
+This visualization describes what people think about when choosing/buying a new tech toy. The colorings denote the different concerns the majority of people choose in their respective country. Clicking on a country on the map brings up the corresponding bar chart that details the distribution of concerns for that country.
 
+It seems that many of the developing and developed countries are most concerned with price of their tech toys. While in Africa most countries prioritize price of the device, some countries like Algeria choose convenience instead. Countries that are colored white did not have data available for the survey.
 
 
 <p>Corresponding folder: vis2 </p>
