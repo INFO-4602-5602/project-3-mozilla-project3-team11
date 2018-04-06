@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Mozilla Geo Visualization</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script type = "text/javascript" src="geovis.js"></script>
+  </head>
+
+  <body onload="loadData();">
+   <h2 align="center">Heading</h2>
+    <div id="left"></div>
+    <div id="content">
+
+      <div id="intro">
+        <p>Some Description over here.</p>
+      </div>
+
+      <div id="vizContent">
+
+        <div id="countryHeaderInfo">
+          <h2 id="countryNameDisp">
+          </h2>
+        </div>
+
+        <div id="mapDiv">
+          <svg id="mapMain"></svg>
+        </div>
+
+        <div id="colorLegends">
+          <ul class="legend">
+            <li><span class = "pri"></span>Price</li>
+            <li><span class = "feat"></span>Features</li>
+            <li><span class = "saf"></span>Safety</li>
+            <li><span class = "secur"></span>Security</li>
+            <li><span class = "priv"></span>Privacy</li>
+            <li><span class = "reliab"></span>Reliability</li>
+            <li><span class = "user"></span>User Reviews</li>
+            <li><span class = "exp"></span>Expert Recommendation</li>
+            <li><span class = "fri"></span>Friend or Family Recommendation</li>
+            <li><span class = "conv"></span>Convenience</li>
+          </ul>
+        </div>
+
+        <div id="countryDetail">
+          <svg id = "countryMain"></svg>
+        </div>
+
+      </div>
+    </div>
+
+<!-- Code has been inspired from Kristine Durivage's github repository
+     https://github.com/gelicia/zoomWorldMap -->
+
+  </body>
+</html>
